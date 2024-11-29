@@ -28,8 +28,8 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
    - Adicione as seguintes variáveis no arquivo `.env`:
 
    ```env
-   FIREBASE_CREDENTIALS_JSON_PATH=/caminho/para/seu/firebase-credentials.json
-   FIREBASE_DB_URI=https://seu-projeto.firebaseio.com
+   FIREBASE_CREDENTIALS_PATH=/caminho/para/seu/firebase-credentials.json
+   FIREBASE_DATABASE_URI=https://seu-projeto.firebaseio.com
 
 6. **Rodar o projeto**:
    - Após configurar o arquivo `.env`, você pode rodar o backend normalmente com `php artisan serve`.
