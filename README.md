@@ -17,7 +17,7 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
    - Vá até o [Firebase Console](https://console.firebase.google.com/).
    - Crie um novo projeto ou use um projeto existente.
    - Na aba lateral clique em na seção **Criação** e após isso na opção **Realtime Database** e copie o URL do banco de dados (algo como `https://seu-projeto.firebaseio.com`).
-   - Deixe quardada porque vamso usar nos passo 3 (FIREBASE_DATABASE_URI).
+   - Deixe quardada porque vamos usar no *passo 3* (FIREBASE_DATABASE_URI).
 
 3. **Obter as credenciais do Firebase**
 
@@ -28,7 +28,7 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
 4. **Obter caminho até o arquivo das credenciais do Firebase**
    
    - Após coloca as credenciais do firebase em sua pasta, digite no terminal `realpath caminho/ate/sua-credencial-firebase.json`. (exemplo: `realpath storage/firebase/firebase-credentials.json`)
-   - Copie o caminho gerado (algo como: `/mnt/c/Users/seu-nome/Downloads/teste/back/storage/firebase/firebase-credentials.json`) e deixei quardada porque vamso usar nos passo 3 (FIREBASE_CREDENTIALS_PATH).
+   - Copie o caminho gerado (algo como: `/mnt/c/Users/seu-nome/Downloads/teste/back/storage/firebase/firebase-credentials.json`) e deixe quardado porque vamos usar no *passo 3* (FIREBASE_CREDENTIALS_PATH).
    
 5. **Configurar Variáveis de Ambiente**
 
