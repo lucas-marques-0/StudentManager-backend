@@ -1,4 +1,6 @@
-# StudentManager [Back-end]
+# StudentManager (Inicie) [Back-end]
+
+![studentmanager-back](https://github.com/user-attachments/assets/aa4512b5-e48b-4d3f-9ed0-5a3cf36f6beb)
 
 ## Etapas até rodar o projeto:
 
