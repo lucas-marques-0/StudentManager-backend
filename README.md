@@ -8,23 +8,30 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
 
 1. **Instalar dependências**:
    
-   - Rode o comando `composer install` para instalar todas as dependências do projeto.
+   - Incie rode o comando `composer install` para instalar todas as dependências do projeto.
 
-3. **Criação de Conta no Firebase**
+2. **Obter url do banco de dados Firebase**
    
    - Vá até o [Firebase Console](https://console.firebase.google.com/).
    - Crie um novo projeto ou use um projeto existente.
    - Na aba lateral clique em na seção **Criação** e após isso na opção **Realtime Database** e copie o URL do banco de dados (algo como `https://seu-projeto.firebaseio.com`).
+   - Deixe quardada porque vamso usar nos passo 3 (FIREBASE_DATABASE_URI).
 
-2. **Obter Credenciais do Firebase**
+3. **Obter as credenciais do Firebase**
 
    - No Firebase Console, acesse a engrenagem na aba esquerda. **Configurações do Projeto** > **Contas de Serviço**.
    - Gere um novo arquivo de chave privada em formato JSON. (exemplo: `firebase-credentials.json`)
    - Salve esse arquivo em um diretório seguro no seu projeto (exemplo recomendado: `storage/firebase/firebase-credentials.json`).
 
-3. **Configurar Variáveis de Ambiente**
+4. **Obter caminho até o arquivo das credenciais do Firebase**
+   
+   - Após coloca as credenciais do firebase em sua pasta, digite no terminal `realpath caminho/ate/sua-credencial-firebase.json`. (exemplo: `realpath storage/firebase/firebase-credentials.json`)
+   - Copie o caminho gerado (algo como: `/mnt/c/Users/seu-nome/Downloads/teste/back/storage/firebase/firebase-credentials.json`) e deixei quardada porque vamso usar nos passo 3 (FIREBASE_CREDENTIALS_PATH).
+   
+5. **Configurar Variáveis de Ambiente**
 
    - Crie um arquivo `.env` na raiz do seu projeto (se ainda não tiver).
+   - Pegue o `FIREBASE_CREDENTIALS_PATH` (obtido no *passo 3*) e o `FIREBASE_DATABASE_URI` (obtido no *passo 2*)
    - Adicione as seguintes variáveis no arquivo `.env`:
 
    ```env
@@ -33,4 +40,6 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
 
 6. **Rodar o projeto**:
    - Após configurar o arquivo `.env`, você pode rodar o backend normalmente com `php artisan serve`.
+  
+7. Caso ocorra algum erro, digite `php artisan config:clear` e `php artisan cache:clear`, e logo após isso tente rodar novamente com `php artisan serve`.
 
