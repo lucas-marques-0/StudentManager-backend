@@ -43,5 +43,5 @@ Este repositório contém um projeto que interage com o Firebase. Para rodá-lo 
 6. **Rodar o projeto**:
    - Após configurar o arquivo `.env`, você pode rodar o backend normalmente com `php artisan serve`.
   
-7. Caso ocorra algum erro, digite `php artisan config:clear` e `php artisan cache:clear`, e logo após isso tente rodar novamente com `php artisan serve`.
+7. Caso ocorra algum erro ou apenas queira dar um refresh nas configurações e cache do artisan, digite `php artisan config:clear` e `php artisan cache:clear`, e logo após isso tente rodar novamente com `php artisan serve`.
 
