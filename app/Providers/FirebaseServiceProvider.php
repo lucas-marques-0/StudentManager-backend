@@ -11,8 +11,8 @@ class FirebaseServiceProvider extends ServiceProvider
     {
         $this->app->singleton('firebase.database', function () {
             $factory = (new Factory())
-                ->withServiceAccount('/mnt/c/Users/lucas/OneDrive/Área de Trabalho/inicie-project/backend/storage/firebase/firebase-credentials.json')
-                ->withDatabaseUri('https://inicie-students-db-default-rtdb.firebaseio.com'); 
+                ->withServiceAccount(env('FIREBASE_CREDENTIALS_PATH'))
+                ->withDatabaseUri(env('FIREBASE_DATABASE_URI')); 
             $database = $factory->createDatabase();
             return $database;
         });
