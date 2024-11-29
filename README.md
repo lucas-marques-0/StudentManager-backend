@@ -2,7 +2,9 @@
 
 ![studentmanager-back](https://github.com/user-attachments/assets/aa4512b5-e48b-4d3f-9ed0-5a3cf36f6beb)
 
-## Etapas até rodar o projeto:
+### ⚠️ ATENÇÃO: Esse projeto consiste em duas partes (Front-end e Back-end), e para que ele funcione completamente, as duas precisam estar rodando. Então acesse o repositório para rodar o Front-end aqui (https://github.com/lucas-marques-0/StudentManager-frontend). 
+
+## Etapas até rodar o projeto (Back-end) :
 
 Este repositório contém um projeto que interage com o Firebase. Para rodá-lo localmente em sua máquina, você precisará configurar corretamente o Firebase, utilizando suas credenciais pessoais. Siga as etapas abaixo para garantir que você consiga rodar o projeto sem problemas.
 
